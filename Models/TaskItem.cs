@@ -13,8 +13,10 @@ namespace TaskManager.Models
         public string Description { get; set; }
 
         [DataType(DataType.Date)]
+        [Display(Name = "Due Date")]
         public DateTime DueDate { get; set; }
 
+        [Display(Name = "Task Status")]
         public Status TaskStatus { get; set; }
     }
 }
